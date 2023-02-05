@@ -1,0 +1,43 @@
+.message {
+  width: 100%;
+  min-height: 90vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 40px;
+}
+
+.message h2 {
+  font-size: 2em;
+}
+
+.email {
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email label {
+  font-size: 1.1em;
+}
+
+.email input {
+  padding: 5px 10px;
+}
+
+.contenu {
+  padding: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contenu label {
+  font-size: 1.1em;
+}

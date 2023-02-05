@@ -1,0 +1,20 @@
+.confirmation {
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: teal;
+}
+
+.confirmation h2 {
+    margin: 40px auto;
+    font-size: 2em;
+    color: var(--txt-ft-cl-2d);
+}
+
+.confirm-txt {
+    margin: 10px auto;
+    color: var(--txt-ft-cl-2d);
+    font-size: 1.2em;
+}

@@ -1,0 +1,71 @@
+.profil-adm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards-adm {
+  margin: auto;
+  padding: 20px;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-adm {
+  width: 60vw;
+  height: 60vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.card-adm a {
+  text-decoration: none;
+  padding: 10px;
+  color: var(--txt-ft-cl-2d);
+  font-size: 1em;
+  border: 1px solid var(--txt-ft-cl-2d);
+  border-radius: 8px;
+  background-color: teal;
+}
+
+.profil-adm h2 {
+  margin: 20px auto;
+  font-size: 2em;
+  color: var(--txt-ft-cl);
+}
+
+.profil-adm a {
+  text-decoration: none;
+}
+
+.card-profil-adm {
+  width: 80vw;
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  overflow: scroll;
+}
+
+.card-profil-adm table {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  padding: 30px;
+  table-layout: fixed;
+}
+
+.card-profil-adm table td {
+  padding: 30px;
+}

@@ -1,0 +1,46 @@
+.reservation {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: teal;
+}
+
+.reservation h2 {
+  margin: 40px auto;
+  font-size: 2em;
+  color: var(--txt-ft-cl-2d);
+}
+
+.card-resa {
+  min-width: 40vw;
+  min-height: 70vh;
+}
+
+.card-resa img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-resa p {
+  font-size: 1.1em;
+}
+
+.form-resa form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.form-resa form label {
+  font-size: 1.1em;
+}
+
+#dt_debut, #dt_fin {
+  font-size: 1.5em;
+}

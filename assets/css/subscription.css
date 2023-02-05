@@ -1,0 +1,90 @@
+.subscription {
+  width: 100%;
+  min-height: 90vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 50px;
+}
+
+.subscription h2 {
+  font-size: 2em;
+  color: var(--txt-ft-cl);
+}
+
+.form {
+  width: 25vw;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pseudo {
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pseudo label {
+  font-size: 1.1em;
+}
+
+.pseudo input {
+  padding: 10px;
+}
+
+.pwd {
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pwd label {
+  font-size: 1.1em;
+}
+
+.pwd input {
+  padding: 10px;
+}
+
+.email {
+  padding: 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email label {
+  font-size: 1.1em;
+}
+
+.email input {
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px;
+  text-align: start;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.btn input {
+  padding: 8px 30px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  background-color: darkcyan;
+  color: aliceblue;
+  font-weight: bold;
+}
