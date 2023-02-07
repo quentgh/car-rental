@@ -8,7 +8,6 @@ require_once 'function.php';
 include '../inc/headerAdm.php';
 
 $message = '';
-// $subscription = '';
 
 
 if (isset($_POST['username'])) {
@@ -20,9 +19,7 @@ if (isset($_POST['username'])) {
     ));
 
     while ($donnees = $query->fetch(PDO::FETCH_ASSOC)) {
-        // echo "Je rentre dans le WHILE";
         if (!empty($donnees) && ($donnees['admin'] == 1)) {
-            // echo "Je rentre dans IF du while <br/>";
             $hashedPassword = $donnees['mdp'];
             if ($_POST['mdp'] == $hashedPassword) {
                 $isSuccess = 1;
@@ -38,11 +35,6 @@ if (isset($_POST['username'])) {
         ));
 
         $id_membre = $query->fetch(PDO::FETCH_ASSOC);
-
-        // echo "Je suis id_membre <hr/>";
-        // print_r($id_membre) ;
-        // echo "<br/>";
-
         $query = getBdd()->prepare("SELECT username,
                                             admin
                                     FROM membre
@@ -52,18 +44,9 @@ if (isset($_POST['username'])) {
         ));
 
         $userName = $query->fetch(PDO::FETCH_ASSOC);
-        // echo "Je suis username <hr/>";
-        // print_r($userName) ;
         $_SESSION['username'] = $userName['username'];
         $_SESSION['admin'] = $userName['admin'];
         $_SESSION['id_membre'] = $id_membre['id'];
-
-        // echo "<hr/>";
-        // print_r($_SESSION['username']);
-        // echo "<hr/>";
-        // print_r($_SESSION['admin']);
-        // echo "<hr/>";
-        // print_r($_SESSION['id_membre']);
 
         header("Location:../tools/adm.php");
 
