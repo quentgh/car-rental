@@ -55,7 +55,7 @@
   min-height: 60vh;
   display: flex;
   justify-content: space-around;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .card-profil-adm table {
