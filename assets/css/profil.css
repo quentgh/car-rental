@@ -19,9 +19,10 @@
 
 .card-profil {
   min-width: 60vw;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   justify-content: space-around;
+  overflow-y : scroll;
 }
 
 .card-profil table {
