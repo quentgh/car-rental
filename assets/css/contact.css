@@ -1,6 +1,6 @@
 .message {
   width: 100%;
-  min-height: 90vh;
+  height: 85vh;
   padding: 30px;
   display: flex;
   flex-direction: column;

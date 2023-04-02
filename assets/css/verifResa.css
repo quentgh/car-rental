@@ -1,6 +1,6 @@
 .validation {
     width: 100%;
-    min-height: 95vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -8,12 +8,12 @@
 }
 
 .validation h2 {
-    margin: 40px auto;
+    margin: 40px auto 0;
     font-size: 2em;
     color: var(--txt-ft-cl-2d);
 }
 
 .card-verif {
     min-width: 40vw;
-    min-height: 70vh;
+    min-height: 65vh;
   }
