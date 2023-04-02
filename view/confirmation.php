@@ -11,7 +11,7 @@ include '../inc/header.php';
 //Inscription en BDD à cette étape de confirmation
 $res = getBdd()->prepare("INSERT INTO reservation (dt_debut, dt_fin, prix_total, id_membre, id_voiture) VALUES (?, ?, ?, ?, ?)");
 $res->execute(array(
-    $_SESSION['dt_debut'], $_SESSION['dt_fin'], $_SESSION['prix_jour'], $_SESSION['id_membre'], $_SESSION['id_voiture']
+    $_SESSION['dt_debut'], $_SESSION['dt_fin'], $_SESSION['prix_total'], $_SESSION['id_membre'], $_SESSION['id_voiture']
 ));
 
 

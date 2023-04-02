@@ -47,3 +47,25 @@ function logoutAdm()
     unset($_SESSION['id_membre']);
     unset($_SESSION['admin']);
 }
+
+function getDateDiff(string $dt_debut, string $dt_fin)
+{
+    $q = getBdd()->query("SELECT DATEDIFF('$dt_fin', '$dt_debut')");
+    return $q->fetch();
+}
+
+
+function editResa(int $id_voiture, string $dt_debut, string $dt_fin, int $prix_total, int $id, int $id_membre)
+{
+    $q = getBdd()->prepare("UPDATE reservation SET id_membre = ?, id_voiture = ?, dt_debut = ?, dt_fin = ?, prix_total = ? WHERE id = ?");
+    return $q->execute(array($id_membre, $id_voiture, $dt_debut, $dt_fin, $prix_total, $id));
+}
+
+function validateResa(int $id_voiture, string $dt_debut, string $dt_fin, int $prix_total, int $id_membre = NULL)
+{
+    $q = getBdd()->prepare("INSERT INTO reservation (id_membre, id_voiture, dt_debut, dt_fin, prix_total) VALUES (?, ?, ?, ?, ?)");
+    if (is_null($id_membre))
+        return $q->execute(array($_SESSION['id'], $id_voiture, $dt_debut, $dt_fin, $prix_total));
+    else
+        return $q->execute(array($id_membre, $id_voiture, $dt_debut, $dt_fin, $prix_total));
+}

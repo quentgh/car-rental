@@ -1,6 +1,6 @@
 .reservation {
   width: 100%;
-  min-height: 95vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -8,19 +8,19 @@
 }
 
 .reservation h2 {
-  margin: 40px auto;
+  margin: 20px auto 0;
   font-size: 2em;
   color: var(--txt-ft-cl-2d);
 }
 
 .card-resa {
   min-width: 40vw;
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 .card-resa img {
   width: 100%;
-  object-fit: contain;
+  object-fit:contain;
 }
 
 .card-resa p {

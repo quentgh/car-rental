@@ -38,7 +38,7 @@ $_SESSION['prix_jour'] = $donnees['prix_journalier'];
             <p class="card-text">
                 <?php
                 echo $donnees['description'] . "<br/><br/>";
-                echo '<div style="font-weight:bold;"> Prix par jour : ' . $donnees['prix_journalier'] . '</div>';
+                echo '<div style="font-weight:bold;"> Prix par jour : ' . $donnees['prix_journalier'] . ' euros</div>';
                 ?>
             </p>
             <div class="form-resa">

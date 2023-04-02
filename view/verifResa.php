@@ -15,8 +15,14 @@ if ($_POST) {
 
     $_SESSION['dt_debut'] = htmlspecialchars($_POST['dt_debut']);
     $_SESSION['dt_fin'] = htmlspecialchars($_POST['dt_fin']);
-
 }
+
+$diff = getDateDiff($_SESSION['dt_debut'], $_SESSION['dt_fin']);
+$diff = (int) $diff[0];
+
+$total = ($diff * $prix_jour) + $prix_jour;
+
+$_SESSION['prix_total'] = $total;
 
 ?>
 
@@ -28,7 +34,7 @@ if ($_POST) {
             <h3 class="card-title"><?php echo $nom_voiture ?></h3>
             <p class="card-text">
                 La réservation est comprise pour la période suivante : <?php echo " de " . $_SESSION['dt_debut'] . " à " . $_SESSION['dt_fin'] . "<br/><br/>"; ?>
-                Au prix total de : <?php echo $prix_jour; ?>
+                Au prix total de : <?php echo $total;?> euros.
             </p>
             <a href="confirmation.php" class="card-btn">Payer la réservation</a>
         </div>
